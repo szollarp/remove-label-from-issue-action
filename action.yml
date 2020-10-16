@@ -1,0 +1,19 @@
+name: Remove label(s)
+description: Remove label(s) from an issue.
+author: Peter Szollar
+inputs:
+  token:
+    description: GitHub token.
+    required: true
+  issueNumber:
+    description: The number of the issue.
+    required: true
+  labels:
+    description: The labels name to be removed. Must be separated with ';' if there're multiple labels.
+    required: true
+runs:
+  using: node12
+  main: dist/index.js
+branding:
+  icon: tag  
+  color: orange
