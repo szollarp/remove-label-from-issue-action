@@ -10,7 +10,7 @@ async function run(): Promise<void> {
     const {context, getOctokit} = github;
     const octokit = getOctokit(token);
 
-    for(const name in labels) {
+    for(const name of labels) {
       await octokit.issues.removeLabel({
         ...context.repo,
         issue_number: issueNumber,
