@@ -3720,7 +3720,7 @@ function run() {
             const labels = core.getInput('labels', { required: true }).split(';');
             const { context, getOctokit } = github;
             const octokit = getOctokit(token);
-            for (const name in labels) {
+            for (const name of labels) {
                 yield octokit.issues.removeLabel(Object.assign(Object.assign({}, context.repo), { issue_number: issueNumber, name }));
             }
         }
