@@ -1,5 +1,8 @@
 # Action Remove Labels
 
+[![actions-workflow-test][actions-workflow-test-badge]][actions-workflow-test]
+[![release][release-badge]][release]
+
 It's a GitHub Action to remove GitHub labels.
 
 ## Inputs
@@ -27,3 +30,11 @@ jobs:
           labels: fix;build
           issueNumber: 100
 ```
+
+<!-- badge links -->
+
+[actions-workflow-test]: https://github.com/szollarp/remove-label-from-issue-action/actions?query=workflow%3Aunits-test
+[actions-workflow-test-badge]: https://img.shields.io/github/workflow/status/szollarp/remove-label-from-issue-action/units-test?label=Test&style=for-the-badge&logo=github
+
+[release]: https://github.com/szollarp/remove-label-from-issue-action/releases
+[release-badge]: https://img.shields.io/github/v/release/szollarp/remove-label-from-issue-action?style=for-the-badge&logo=github
